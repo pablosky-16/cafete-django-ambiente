@@ -1,0 +1,21 @@
+{% extends "core/base.html" %}  = carga layaout por ejemplo menu y cabecera en toda las misma paginas
+{% load static %} carga statico como imagenes
+
+
+
+img class="mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="{% static 'core/img/products-01.jpg' %}" alt="">
+         
+
+
+
+{% block content %}
+el contenido propio de cada web poner aqui
+
+{% endblock %}
+
+
+
+
+para que quede marcado la pestaña de la pagina
+
+  <li class="nav-item {% if request.path == '/servicios/' %} active {% endif %} px-lg-4 ">
